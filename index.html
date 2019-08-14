@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="lomake" onsubmit="validateForm(event)">
+        <table>
+            <tr>
+                <td>
+                    Käyttäjä ID :
+                </td>
+                <td>
+                    <input type="text" placeholder="Käyttäjä ID" name="id"><span id= "id_err"></span>
+                </td>
+                <tr>
+                    <td>
+                        Salasana :
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Salasana" name="salasana"><span id="salasana_err"></span>
+                    </td>
+                    <tr>
+                        <td>
+                            Nimi :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Nimi" name="nimi"><span id="nimi_err"></span>
+                        </td>
+                        <tr>
+                            <td>
+                                Osoite :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Osoite" name="osoite"><span id= "osoite_err"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Maa :
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Suomi</option>
+                                    <option>Ruotsi</option>
+                                    <option>Venäjä</option>
+                                    <option>Norja</option>
+                                    <option>Viro</option>
+                                    <option>Latvia</option>
+                                    <option>Liettua</option>
+                                    <option>Tanska</option>
+                                    <option>Saksa</option>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Postinumero :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Postinumero" name="postinumero"><span id= "postinumero_err"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Email" name="email"><span id= "email_err"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sukupuoli :
+                            </td>
+                            <td>
+                                <input type="radio" name="sukupuoli"> Mies
+                                <input type="radio" name="sukupuoli"> Nainen
+                                <input type="radio" name="sukupuoli"> En halua määritellä
+                                <span id= "sukupuoli_err"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Kieli :
+                            </td>
+                            <td>
+                                <input type="radio" name="kieli"> Suomi
+                                <input type="radio" name="kieli"> Muu kuin suomi
+                                <span id= "kieli_err"></span>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                Lisätietoja :
+                            </td>
+                            <td>
+                                <textarea name="Lisätietoja" style="margin: 0px; height: 155px; width: 280px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Lähetä">
+                            </td>
+                        </tr>
+        </table>
+    </form>
+   <script src="script.js"></script>
+</body>
+
+</html>
